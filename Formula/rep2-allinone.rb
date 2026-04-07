@@ -1,15 +1,15 @@
 class Rep2Allinone < Formula
   desc "2chproxy.pl + p2-php + Caddy + PHP-FPM all-in-one package"
   homepage "https://github.com/fukumen/rep2-allinone"
-  version "1.1.0"
+  version "1.1.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://fukumen.github.io/rep2-allinone/macos/rep2-allinone-1.1.0-php8.5.4-caddy2.11.2+202603281147-macos-arm64.tar.gz"
-      sha256 "431ac6be14592aee93accce7a0b78c45dab7c213b73d1f09148f6e4cbe5c53ce"
+      url "https://fukumen.github.io/rep2-allinone/macos/rep2-allinone-1.1.1-php8.5.4-caddy2.11.2+202604072042-macos-arm64.tar.gz"
+      sha256 "756289d5de974612f48e8368b119daef8e8f54fdda065f7b842d6f2516eaf983"
     else
-      url "https://fukumen.github.io/rep2-allinone/macos/rep2-allinone-1.1.0-php8.5.4-caddy2.11.2+202603281147-macos-x86_64.tar.gz"
-      sha256 "a17bf7bdb51718fba9125985eedd90e52807838c9875f1a4de9bfb8dd37e8c48"
+      url "https://fukumen.github.io/rep2-allinone/macos/rep2-allinone-1.1.1-php8.5.4-caddy2.11.2+202604072042-macos-x86_64.tar.gz"
+      sha256 "e4f288d986a95fd0e168151a102bf15452ea554e76071846f7ec85d353df5a92"
     end
   end
 
@@ -30,6 +30,7 @@ class Rep2Allinone < Formula
     (var/"lib/rep2-allinone/conf").mkpath
     (var/"lib/rep2-allinone/data").mkpath
     (var/"lib/rep2-allinone/ic").mkpath
+    (var/"lib/rep2-allinone/user_skin").mkpath
 
     unless (etc/"rep2-allinone/php-fpm.conf").exist?
       cp prefix/"conf/php-fpm.conf", etc/"rep2-allinone/php-fpm.conf"
@@ -53,6 +54,7 @@ class Rep2Allinone < Formula
     ln_sf var/"lib/rep2-allinone/conf", prefix/"p2-php/conf"
     ln_sf var/"lib/rep2-allinone/data", prefix/"p2-php/data"
     ln_sf var/"lib/rep2-allinone/ic", prefix/"p2-php/rep2/ic"
+    ln_sf var/"lib/rep2-allinone/user_skin", prefix/"p2-php/rep2/user_skin"
   end
 
   def caveats
