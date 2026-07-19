@@ -5,11 +5,11 @@ class Rep2Allinone < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://fukumen.github.io/rep2-allinone/macos/rep2-allinone-1.1.6-php8.5.7-caddy2.11.4+202607191700-macos-arm64.tar.gz"
-      sha256 "fa581cc0eadbf56f448d95e385c5da0ec46d24637fc985185ac1b331bac85c11"
+      url "https://fukumen.github.io/rep2-allinone/macos/rep2-allinone-1.1.6-php8.5.7-caddy2.11.4+202607191825-macos-arm64.tar.gz"
+      sha256 "7e9ca2ed8c27180f528606d925294e2cbb045f79161af557789de1a94f236d97"
     else
-      url "https://fukumen.github.io/rep2-allinone/macos/rep2-allinone-1.1.6-php8.5.7-caddy2.11.4+202607191700-macos-x86_64.tar.gz"
-      sha256 "3a90d2ca7ee46e4e71ff992fccd274f795ed8ed6daefa5cbae6987c2b1a8377b"
+      url "https://fukumen.github.io/rep2-allinone/macos/rep2-allinone-1.1.6-php8.5.7-caddy2.11.4+202607191825-macos-x86_64.tar.gz"
+      sha256 "878e92ff52196769a0b70c505f2104ad849dcb65908ca32e1b3d9919edb3125d"
     end
   end
 
