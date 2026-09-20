@@ -1,15 +1,15 @@
 class Rep2Allinone < Formula
   desc "p2-php + Caddy + PHP-FPM all-in-one package"
   homepage "https://github.com/fukumen/p2-php"
-  version "202609200737"
+  version "202609201014"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/fukumen/p2-php/releases/download/latest/rep2-allinone-202609200737-php8.5.9-caddy2.11.4-macos-arm64.tar.gz"
-      sha256 "e162f01913c201764fe37afc87537f9445d6e47beb58a7edb0845bd3c414f77f"
+      url "https://github.com/fukumen/p2-php/releases/download/latest/rep2-allinone-202609201014-php8.5.9-caddy2.11.4-macos-arm64.tar.gz"
+      sha256 "3d8090e62d2cc70bdeca0d14f18a114f31bfd0bece30a397961e2ac2820c71d5"
     else
-      url "https://github.com/fukumen/p2-php/releases/download/latest/rep2-allinone-202609200737-php8.5.9-caddy2.11.4-macos-x86_64.tar.gz"
-      sha256 "1f4681de6dfd3c094138ba4d9b255b0a54e665dd631120fceafc794023e32131"
+      url "https://github.com/fukumen/p2-php/releases/download/latest/rep2-allinone-202609201014-php8.5.9-caddy2.11.4-macos-x86_64.tar.gz"
+      sha256 "e5080fb0eef8c48794854307854adb348cd22dd82cd3b21e5396fb41c39efd50"
     end
   end
 
