@@ -1,26 +1,26 @@
 class Rep2Allinone < Formula
   desc "p2-php + Caddy + PHP-FPM all-in-one package"
   homepage "https://github.com/fukumen/p2-php"
-  version "202610061130"
+  version "202610101007"
 
   keg_only "rep2-allinone用のstatic-phpがバンドルされているためです"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/fukumen/p2-php/releases/download/latest/rep2-allinone-202610061130-php8.5.11-caddy2.11.7-macos-arm64.tar.gz"
-      sha256 "be803168fffe3ff87822dd359f6110a76199439e3a1a1a5dd67eac73771d6281"
+      url "https://github.com/fukumen/p2-php/releases/download/latest/rep2-allinone-202610101007-php8.5.11-caddy2.11.7-macos-arm64.tar.gz"
+      sha256 "d2d935db5f21eca1e2ad163721c0c0a2729cb9b4dacd6ab3d53e973347f5b150"
     else
-      url "https://github.com/fukumen/p2-php/releases/download/latest/rep2-allinone-202610061130-php8.5.11-caddy2.11.7-macos-x86_64.tar.gz"
-      sha256 "29b0a2e0a67a78baf053d2de67fe39a9ad5de7a8b364f9f9c84425d5458cde7a"
+      url "https://github.com/fukumen/p2-php/releases/download/latest/rep2-allinone-202610101007-php8.5.11-caddy2.11.7-macos-x86_64.tar.gz"
+      sha256 "d56e3f137ef00d04a469cbb4b8011af791004bf0a8332cc11c9b51e110404fe3"
     end
   end
 
   BUILD_INFO_TEMPLATE = <<~INFO
 VER_REPO_TYPE=rep2-allinone
-VER_REPO_HASH=d6886f5
-VER_REPO_LOG=MjAyNi0xMC0wNiAxMTozMCBnaXRodWIgYWN0aW9u5L+u5q2jCg==
-VER_RUN_ID=37406103261
-VER_RUN_NUMBER=16
+VER_REPO_HASH=cd835c9
+VER_REPO_LOG=MjAyNi0xMC0xMCAxMDowNyBJROOBrihuKeOCkuOCr+ODquODg+OCr+aZguOBruODiOOCsOODq+OBjOWKueOBi+OBquOBhOS4jeWFt+WQiOOCkuS/ruatowo=
+VER_RUN_ID=38012253940
+VER_RUN_NUMBER=17
 VER_PHP=8.5.11
 VER_CADDY=2.11.7
 VER_COMPOSER=2.10.3
