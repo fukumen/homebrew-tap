@@ -8,10 +8,10 @@ class Rep2Allinone < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/fukumen/p2-php/releases/download/latest/rep2-allinone-202610212252-php8.5.12-caddy2.11.7-macos-arm64.tar.gz"
-      sha256 "205430b1be95e94426d54dcec364a9b7aa6f99cdaedc1b0df2e6358a8eb3729a"
+      sha256 "654ebf65b0135126b5157ac7f141cdaf4b7bf99e41ee5c71c8a60b98540c81d6"
     else
       url "https://github.com/fukumen/p2-php/releases/download/latest/rep2-allinone-202610212252-php8.5.12-caddy2.11.7-macos-x86_64.tar.gz"
-      sha256 "d33a1350f36c61875d7c159d4d6db8613af446deeb2a546419e89a5b08001a32"
+      sha256 "8d6748b350faddd56352d07f3d6996a4b8ad1e32d5750772dcfce870cdc099da"
     end
   end
 
@@ -19,8 +19,8 @@ class Rep2Allinone < Formula
 VER_REPO_TYPE=rep2-allinone
 VER_REPO_HASH=b8b4558
 VER_REPO_LOG=MjAyNi0xMC0yMSAyMjo1MiByZXAyLWFsbGlub25l44GuUEhQ44KSOC41LjEy44Gr5pu05pawCg==
-VER_RUN_ID=39620254907
-VER_RUN_NUMBER=18
+VER_RUN_ID=39620794328
+VER_RUN_NUMBER=19
 VER_PHP=8.5.12
 VER_CADDY=2.11.7
 VER_COMPOSER=2.10.3
